@@ -15,6 +15,7 @@ public class Main {
         if (cpu.isEmpty()) {
             cpu = "Default CPU";
         }
+
         System.out.print("Enter RAM size (leave empty for 8GB default): ");
         String ramInput = scanner.nextLine();
         int ram = ramInput.isEmpty() ? 8 : Integer.parseInt(ramInput);
@@ -32,8 +33,7 @@ public class Main {
             gpu = "Integrated GPU";
         }
 
-        /**
-         * Este código crea paso por paso el objeto Computadora.
+        /* Este código crea paso por paso el objeto Computadora.
          * En cada paso, se llama a un método de la clase ComputerBuilder para configurar un atributo de la computadora.
          * Al final, se llama al método build() para obtener el objeto Computadora completo.
          * Esto se hace para que podamos crear el objeto en diferentes formatos opcionales, osea, que pueden ser vacíos.
